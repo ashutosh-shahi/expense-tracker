@@ -1,24 +1,27 @@
-# expense-tracker
-A simple expense Tracker built using HTML, CSS and JavaScript.
+# 💰 Expense Tracker
+
+A simple expense tracker built using HTML, CSS and JavaScript.
 
 ## Features
 
--Add expense
--Delete Expenses
--Automatic total calculation
--Expense count tracking
--Input validation
--Dynamic DOM updates
+- Add expenses
+- Delete expenses
+- Clear all expenses
+- Automatic total calculation
+- Expense count tracking
+- Input validation
+- Dynamic DOM updates
+- Local Storage support
 
-##Technologies Used
+## Technologies Used
 
--HTML
--CSS
--JavaScript
+- HTML
+- CSS
+- JavaScript
 
-##Future Improvements
+## Future Improvements
 
--Expense categories
--Local storage
--Search functionality
--Better UI design
+- Search expenses
+- Filter by category
+- Edit expenses
+- Monthly reports
