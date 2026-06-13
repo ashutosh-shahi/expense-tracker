@@ -25,3 +25,10 @@ A simple expense tracker built using HTML, CSS and JavaScript.
 - Filter by category
 - Edit expenses
 - Monthly reports
+
+## Screenshot
+
+![Expense Tracker](<img width="1918" height="917" alt="Screenshot 2026-06-13 164418" )src="https://github.com/user-attachments/assets/bba6ddf6-421b-456d-945c-c43186e992b8" />
+
+  
+  
