@@ -5,20 +5,32 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-    <h1>Expense Tracker</h1>
+    <div class="container">
+    <h1>💰 Expense Tracker</h1>
+    <div class="form-row">
+    <select id="category">
+        <option>Food</option>
+        <option>Travel</option>
+        <option>Shopping</option>
+        <option>Bills</option>
+        <option>Education</option>
+        <option>Miscellaneous</option>
+    </select>
 
     <input type="text" id="expenseName" placeholder="Expense Name">
 
     <input type="number" id="expenseAmount" placeholder="Amount">
 
     <button id="addBtn">Add Expense</button>
-
+    </div>
     <h2>Expenses</h2>
     <h3 id="total">Total Expenses: ₹0</h3>
     <h3 id="count">Number of Expenses: 0</h3>
     <ul id="expenseList"></ul>
-
+    </div>
+    <button id="clearBtn">
+        Clear All
+    </button>
     <script src="script.js"></script>
 
 </body>
