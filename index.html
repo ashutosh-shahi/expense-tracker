@@ -23,14 +23,42 @@
 
     <button id="addBtn">Add Expense</button>
     </div>
+    <select id="filterCategory">
+        <option value="All">All Categories</option>
+        <option value="Food">Food</option>
+        <option value="Travel">Travel</option>
+        <option value="Shopping">Shopping</option>
+        <option value="Bills">Bills</option>
+        <option value="Education">Education</option>
+        <option value="Miscellaneous">Miscellaneous</option>
+    </select>
+    <input
+        type="text"
+        id="search"
+        placeholder="Search expenses..."
+    >
     <h2>Expenses</h2>
     <h3 id="total">Total Expenses: ₹0</h3>
     <h3 id="count">Number of Expenses: 0</h3>
     <ul id="expenseList"></ul>
     </div>
+        <div class="stats">
+
+        <div class="card">
+            <h2 id="total">₹0</h2>
+            <p>Total Expenses</p>
+        </div>
+
+        <div class="card">
+            <h2 id="count">0</h2>
+            <p>Expenses</p>
+        </div>
+
+    </div>
     <button id="clearBtn">
         Clear All
     </button>
+    <button id="themeBtn">🌙</button>
     <script src="script.js"></script>
 
 </body>
