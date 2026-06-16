@@ -1,64 +1,135 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Expense Tracker</title>
+
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+
     <div class="container">
-    <h1>💰 Expense Tracker</h1>
-    <div class="form-row">
-    <select id="category">
-        <option>Food</option>
-        <option>Travel</option>
-        <option>Shopping</option>
-        <option>Bills</option>
-        <option>Education</option>
-        <option>Miscellaneous</option>
-    </select>
 
-    <input type="text" id="expenseName" placeholder="Expense Name">
+        <!-- Header -->
 
-    <input type="number" id="expenseAmount" placeholder="Amount">
+        <div class="top-bar">
 
-    <button id="addBtn">Add Expense</button>
-    </div>
-    <select id="filterCategory">
-        <option value="All">All Categories</option>
-        <option value="Food">Food</option>
-        <option value="Travel">Travel</option>
-        <option value="Shopping">Shopping</option>
-        <option value="Bills">Bills</option>
-        <option value="Education">Education</option>
-        <option value="Miscellaneous">Miscellaneous</option>
-    </select>
-    <input
-        type="text"
-        id="search"
-        placeholder="Search expenses..."
-    >
-    <h2>Expenses</h2>
-    
-    <ul id="expenseList"></ul>
-    </div>
+            <h1>💰 Expense Tracker</h1>
+
+            <button id="themeBtn">🌙</button>
+
+        </div>
+
+        <!-- Add Expense Form -->
+
+        <div class="form-row">
+
+            <select id="category">
+
+                <option>Food</option>
+                <option>Travel</option>
+                <option>Shopping</option>
+                <option>Bills</option>
+                <option>Education</option>
+                <option>Miscellaneous</option>
+
+            </select>
+
+            <input
+                type="text"
+                id="expenseName"
+                placeholder="Expense Name"
+            >
+
+            <input
+                type="number"
+                id="expenseAmount"
+                placeholder="Amount"
+            >
+
+            <button id="addBtn">
+                Add Expense
+            </button>
+
+        </div>
+
+        <!-- Stats Cards -->
+
         <div class="stats">
 
-        <div class="card">
-            <h2 id="total">₹0</h2>
-            <p>Total Expenses</p>
+            <div class="card">
+
+                <h2 id="total">
+                    ₹0
+                </h2>
+
+                <p>Total Expenses</p>
+
+            </div>
+
+            <div class="card">
+
+                <h2 id="count">
+                    0
+                </h2>
+
+                <p>Total Transactions</p>
+
+            </div>
+
         </div>
 
-        <div class="card">
-            <h2 id="count">0</h2>
-            <p>Expenses</p>
+        <!-- Search + Filter -->
+
+        <div class="filter-row">
+
+            <input
+                type="text"
+                id="search"
+                placeholder="Search expenses..."
+            >
+
+            <select id="filterCategory">
+
+                <option>All</option>
+                <option>Food</option>
+                <option>Travel</option>
+                <option>Shopping</option>
+                <option>Bills</option>
+                <option>Education</option>
+                <option>Miscellaneous</option>
+
+            </select>
+
+        </div>
+
+        <!-- Expense List -->
+
+        <h2 class="expense-heading">
+            Expenses
+        </h2>
+
+        <ul id="expenseList">
+
+        </ul>
+
+        <!-- Footer Buttons -->
+
+        <div class="bottom-actions">
+
+            <button id="clearBtn">
+                Clear All
+            </button>
+
         </div>
 
     </div>
-    <button id="clearBtn">
-        Clear All
-    </button>
-    <button id="themeBtn">🌙</button>
+
     <script src="script.js"></script>
 
 </body>
+
 </html>
